@@ -1,14 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./css/microsoft-1.css">
 </head>
+
 <body>
     <nav class="container-normal">導覽列</nav>
-    <header class="container-full">頁首(輪播)</header>
+    <header class="container-full">
+        <!-- 頁首(輪播) -->
+        <picture>
+            <source media="(min-width: 1400px)" srcset="./ms-imgs/swiper/1-1920x600.avif">
+            <source media="(min-width: 1080px)" srcset="./ms-imgs/swiper/1-1399x600.avif">
+            <source media="(min-width: 860px)" srcset="./ms-imgs/swiper/1-1083x600.avif">
+            <source media="(min-width: 540px)" srcset="./ms-imgs/swiper/1-859x540.avif">
+            <img class="w-100" src="./ms-imgs/swiper/1-859x540.avif" alt="">
+        </picture>
+    </header>
     <main class="container-normal">主要內容
         <section class="three-choice">三個選擇</section>
         <section class="four-card">四張卡片</section>
@@ -19,4 +30,5 @@
     </main>
     <footer>頁尾</footer>
 </body>
+
 </html>
