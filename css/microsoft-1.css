@@ -6,3 +6,28 @@ html,
 body {
     margin: 0;
 }
+
+nav {
+    background-color: aqua;
+    width: 100%;
+    height: 54px;
+}
+
+header {
+    background-color: antiquewhite;
+    width: 100%;
+    height: 500px;
+}
+
+main {
+    background-color: lightgreen;
+    width: 90%;
+    height: 2000px;
+    margin: auto;
+}
+
+footer{
+    background-color: lightgray;
+    width: 100%;
+    height: 200px;
+}
