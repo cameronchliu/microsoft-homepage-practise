@@ -34,6 +34,10 @@ main {
     background-color: lightgreen;
 }
 
+main section {
+    margin-bottom: 100px;
+}
+
 section.three-choice {
     background-color: azure;
     height: 200px;
