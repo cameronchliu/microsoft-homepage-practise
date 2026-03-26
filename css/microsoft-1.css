@@ -38,7 +38,7 @@ header {
 }
 
 main {
-    background-color: lightgreen;
+    /* background-color: lightgreen; */
 }
 
 main section {
@@ -52,7 +52,15 @@ section.three-choice {
 
 section.four-card {
     background-color: pink;
-    height: 500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section.four-card .one-card {
+    background-color: purple;
+    width: calc((100% - 20px * 3)/4);
+    height: 400px;
 }
 
 section.big-img {
