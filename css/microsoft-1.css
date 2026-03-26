@@ -12,6 +12,7 @@ body {
     max-width: 1600px;
     margin: auto;
 }
+
 .container-full {
     width: 100%;
     max-width: 1920px;
@@ -31,11 +32,30 @@ header {
 
 main {
     background-color: lightgreen;
-    height: 2000px;
 }
 
-footer{
+section.three-choice {
+    background-color: azure;
+    height: 200px;
+}
+
+section.four-card {
+    background-color: pink;
+    height: 500px;
+}
+
+section.big-img {
+    background-color: lightblue;
+    height: 600px;
+}
+
+section.other {
+    background-color: aqua;
+    height: 200px;
+}
+
+footer {
     background-color: lightgray;
     width: 100%;
-    height: 200px;
+    height: 300px;
 }
