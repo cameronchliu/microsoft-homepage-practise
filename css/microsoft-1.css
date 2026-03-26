@@ -23,6 +23,8 @@ body {
     width: 100%;
 }
 
+
+
 nav {
     background-color: aqua;
     width: 100%;
@@ -31,7 +33,6 @@ nav {
 
 header {
     background-color: antiquewhite;
-    height: 500px;
 }
 
 main {
@@ -54,7 +55,6 @@ section.four-card {
 
 section.big-img {
     background-color: lightblue;
-    height: 600px;
 }
 
 section.other {
