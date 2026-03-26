@@ -7,6 +7,17 @@ body {
     margin: 0;
 }
 
+.container-normal {
+    width: 90%;
+    max-width: 1600px;
+    margin: auto;
+}
+.container-full {
+    width: 100%;
+    max-width: 1920px;
+    margin: auto;
+}
+
 nav {
     background-color: aqua;
     width: 100%;
@@ -15,15 +26,12 @@ nav {
 
 header {
     background-color: antiquewhite;
-    width: 100%;
     height: 500px;
 }
 
 main {
     background-color: lightgreen;
-    width: 90%;
     height: 2000px;
-    margin: auto;
 }
 
 footer{
