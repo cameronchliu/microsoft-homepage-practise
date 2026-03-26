@@ -23,7 +23,9 @@ body {
     width: 100%;
 }
 
-
+img {
+    vertical-align: bottom;
+}
 
 nav {
     background-color: aqua;
