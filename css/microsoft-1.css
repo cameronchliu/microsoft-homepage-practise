@@ -120,6 +120,58 @@ nav ul.func-menu {
     justify-content: end;
 }
 
+nav ul.func-menu li.all-microsoft label.all-microsoft-label {
+    background-color: red;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+
+nav ul.func-menu li.all-microsoft #all-microsoft-switch:checked+label {
+    background-color: pink;
+}
+
+nav ul.func-menu li.all-microsoft div.dropdown-menu {
+    background-color: lightgray;
+    width: 80%;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translate(-50%, 10%);
+}
+
+nav ul.func-menu li.all-microsoft div.dropdown-menu div.menu-top {
+    background-color: lightgray;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+nav ul.func-menu li.all-microsoft div.dropdown-menu div.menu-top ul {
+    background-color: aqua;
+    width: calc((100%/6));
+    flex-direction: column;
+}
+
+nav ul.func-menu li.all-microsoft div.dropdown-menu div.menu-top ul li a {
+    /* padding: 10px 8px 7px; */
+}
+
+nav ul.func-menu li.all-microsoft div.dropdown-menu div.menu-top ul li:hover span,
+nav ul.func-menu li.all-microsoft div.dropdown-menu div.menu-top ul a:focus span {
+    border-bottom: 2px solid black;
+}
+
+nav ul.func-menu li.all-microsoft div.dropdown-menu div.menu-top ul a:focus {
+    outline: 1px dashed black;
+    outline-offset: -5px;
+}
+
+nav ul.func-menu li.all-microsoft div.dropdown-menu div.menu-bottom {
+    background-color: lightyellow;
+    padding: 10px 0px;
+    text-align: center;
+}
+
 @media (max-width:1399px) {
     nav ul.func-menu span.hide-text {
         display: none;
@@ -232,6 +284,7 @@ footer .footer-menu ul {
         width: calc((100%/3));
     }
 }
+
 @media (max-width:539px) {
     footer .footer-menu ul {
         width: 100%;
