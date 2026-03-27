@@ -232,6 +232,11 @@ footer .footer-menu ul {
         width: calc((100%/3));
     }
 }
+@media (max-width:539px) {
+    footer .footer-menu ul {
+        width: 100%;
+    }
+}
 
 footer .footer-menu ul li {
     background-color: pink;
