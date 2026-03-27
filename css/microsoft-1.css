@@ -54,6 +54,13 @@ ul a:focus span {
     margin: auto;
 }
 
+@media (max-width:859px) {
+    .container-normal {
+        width: 100%;
+        padding: 0px 10px;
+    }
+}
+
 .container-full {
     width: 100%;
     max-width: 1920px;
@@ -68,10 +75,28 @@ img {
     vertical-align: bottom;
 }
 
+nav {
+    background-color: aqua;
+    height: 54px;
+    font-size: 13px;
+    display: flex;
+
+    position: relative;
+}
+
 .logo {
     height: 100%;
     display: flex;
     align-items: center;
+}
+
+@media (max-width:859px) {
+    .logo {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
 }
 
 .logo img {
@@ -79,18 +104,18 @@ img {
     height: 23px;
 }
 
-nav {
-    background-color: aqua;
-    height: 54px;
-    font-size: 13px;
-    display: flex;
-}
-
 nav ul.pc-menu {
     width: 800px;
 }
 
+@media (max-width:859px) {
+    nav ul.pc-menu {
+        display: none;
+    }
+}
+
 nav ul.func-menu {
+    min-width: 225px;
     flex: 1;
     justify-content: end;
 }
@@ -98,6 +123,16 @@ nav ul.func-menu {
 @media (max-width:1399px) {
     nav ul.func-menu span.hide-text {
         display: none;
+    }
+}
+
+@media (max-width:859px) {
+    nav ul.func-menu li.all-microsoft {
+        display: none;
+    }
+
+    nav ul.func-menu li.search {
+        margin-right: auto;
     }
 }
 
