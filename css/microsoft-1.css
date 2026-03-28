@@ -305,10 +305,21 @@ footer .footer-nav {
 
 /* --------- 手機版 menu --------- */
 
+    nav .ham-all {
+        display: none;
+    }
+
+
+@media (max-width:860px) {
+    nav .ham-all {
+        display: block;
+    }
+}
+
 nav div.ham-all ul.mobile-menu {
     background-color: #f2f2f2;
     width: 100%;
-    height: 800px;
+    height: auto;
     font-size: 15px;
     flex-direction: column;
     border-bottom: 2px solid black;
@@ -329,6 +340,20 @@ nav div.ham-all ul.mobile-menu li.many-li label.many-switch-label {
     width: 100%;
 }
 
+nav div.ham-all ul.mobile-menu li.many-li label.many-switch-label {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav div.ham-all ul.mobile-menu li.many-li label.many-switch-label .fa-chevron-up,
+nav div.ham-all ul.mobile-menu li.many-li input.many-switch:checked+label.many-switch-label .fa-chevron-down {
+    display: none;
+}
+
+nav div.ham-all ul.mobile-menu li.many-li input.many-switch:checked+label.many-switch-label .fa-chevron-up {
+    display: block;
+}
+
 nav div.ham-all ul.mobile-menu li:hover span,
 nav div.ham-all ul.mobile-menu a:focus span {
     border-bottom: none;
@@ -346,6 +371,6 @@ nav div.ham-all ul.mobile-menu li.many-li ul.sub-dropdown-menu {
     padding-left: 40px;
 }
 
-nav div.ham-all ul.mobile-menu li.many-li input#many-1-switch:checked+label+ul.sub-dropdown-menu {
-    display: block;
+nav div.ham-all ul.mobile-menu li.many-li input.many-switch:checked+label+ul.sub-dropdown-menu {
+    display: flex;
 }
