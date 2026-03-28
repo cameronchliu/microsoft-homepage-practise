@@ -330,7 +330,7 @@ nav div.ham-all ul.mobile-menu li.many-li label.many-switch-label {
 }
 
 nav div.ham-all ul.mobile-menu li:hover span,
-nav div.ham-all ul.mobile-menu a:focus span{
+nav div.ham-all ul.mobile-menu a:focus span {
     border-bottom: none;
 }
 
@@ -343,6 +343,7 @@ nav div.ham-all ul.mobile-menu li.many-li label.many-switch-label:focus {
 nav div.ham-all ul.mobile-menu li.many-li ul.sub-dropdown-menu {
     flex-direction: column;
     display: none;
+    padding-left: 40px;
 }
 
 nav div.ham-all ul.mobile-menu li.many-li input#many-1-switch:checked+label+ul.sub-dropdown-menu {
